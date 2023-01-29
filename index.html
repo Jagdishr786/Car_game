@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Car Game</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+           
+            .top-bar{
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #000;
+                color: #fff;
+                padding: 10px;
+            }
+
+            .line{
+            position:absolute;
+            
+            height: 100px;
+            width: 10px;
+            margin-left: 48%;
+            background-color: white;
+        }
+    
+            .top-bar .leaderboard{
+                background-color: #fff;
+                color: #000;
+                padding: 5px;
+                border-radius: 5px;
+                
+            }
+            .top-bar .leaderboard a{
+                text-decoration: none;
+                color: rgb(158, 20, 128);
+            }
+            .gameArea .startScreen{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                height: 90vh;
+                background-color: #000;
+                color: #fff;
+            }
+            .hide{
+                display: none !important;
+            }
+            .car{
+                position: absolute;
+                border-radius:30px;
+                height: 151px;
+                width: 70px;
+                bottom: 0px; 
+                left: 200px;
+                /* margin:auto; */
+                background-image: url('./car.jpeg');
+                background-size: cover;
+                vertical-align: middle;
+                
+            }
+            
+             
+            .gameScreen{
+                background-color: rgb(70, 67, 67);
+                height: 90vh;
+                position:relative; 
+                margin: auto;
+                /* overflow: hidden; */
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top-bar">
+             <div class="user-name">Jagdish</div>
+            <div class="score-section">
+                Score: <span class="score">0</span>
+            </div>
+            <div class="lives">Highest Score:</div>
+            <div class="leaderboard">
+                <a href="#">LeaderBoard</a>
+            </div>
+        </div>
+        <div class="gameArea">
+              <div class="startScreen">
+                 <h1>Welcome to Game Screen</h1>
+                 <p> Click anywhere to start the game</p>
+              </div>
+        
+              <div class="gameScreen hide">
+             
+              </div>
+        
+        </div>
+    
+       
+            
+        
+    </body>
+    </html>
+
+
+    <script src="./script.js" ></script>
+</body>
+</html>
